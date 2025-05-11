@@ -4,6 +4,7 @@
   "description": "POC for load testing an animals API using k6, TypeScript, and HTML reporting. Example project for automation and monitoring of REST endpoints.",
   "main": "index.js",
   "scripts": {
+    "k6:test": "k6 run -e BASE_URL=https://6820decb259dad2655adddab.mockapi.io/animals/animal animals.test.ts --summary-mode=full",
     "prepare": "husky"
   },
   "keywords": [

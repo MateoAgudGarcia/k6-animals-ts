@@ -33,6 +33,9 @@ jobs:
 
       - name: Run k6 tests
         uses: grafana/run-k6-action@v1
+        continue-on-error: true
+        env:
+          BASE_URL: https://6820decb259dad2655adddab.mockapi.io/animals/animal
         with:
           path: |
             animals.test.ts

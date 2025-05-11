@@ -23,11 +23,10 @@ interface SetupData {
   animals: Animal[];
 }
 
-const BASE_URL = "https://6820decb259dad2655adddab.mockapi.io/animals/animal";
+const BASE_URL = __ENV.BASE_URL;
 
 const jsonHeaders = { headers: { "Content-Type": "application/json" } };
 
-// Modifica getRandomNewAnimal para recibir el array de animales
 function getRandomNewAnimal(animals: Animal[]): Animal {
   return randomItem(animals);
 }
@@ -66,10 +65,9 @@ const createTrend = new Trend("create_trend");
 const updateTrend = new Trend("update_trend");
 const deleteTrend = new Trend("delete_trend");
 
+const animals: Animal[] = JSON.parse(open("./animals.json"));
+
 export function setup(): SetupData {
-  // Carga los datos de animales aquí
-  const animals: Animal[] = JSON.parse(open("./animals.json"));
-  // Valida el endpoint principal antes de correr el test
   const res = http.get(BASE_URL);
   if (res.error) {
     exec.test.abort(
@@ -112,7 +110,7 @@ export default function (data: SetupData) {
   // CREATE a new animal
   let createdAnimalId = "";
   group("Create a new animal", function () {
-    // Usa los animales del setupData
+    // Use animals from setupData
     const newAnimal: Animal = getRandomNewAnimal(data.animals);
     const res = http.post(BASE_URL, JSON.stringify(newAnimal), {
       ...jsonHeaders,
@@ -142,7 +140,6 @@ export default function (data: SetupData) {
     if (!createdAnimalId) {
       return;
     }
-    // Usa los animales del setupData
     const updated: Animal = getRandomNewAnimal(data.animals);
     const res = http.put(
       `${BASE_URL}/${createdAnimalId}`,
@@ -184,7 +181,6 @@ export default function (data: SetupData) {
 }
 
 export function teardown() {
-  // Delete all animals created during the test
   for (const id of createdAnimalIds) {
     http.del(`${BASE_URL}/${id}`);
   }
