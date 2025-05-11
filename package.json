@@ -1,15 +1,25 @@
 {
   "name": "k6-animals-ts",
   "version": "1.0.0",
-  "description": "",
+  "description": "POC for load testing an animals API using k6, TypeScript, and HTML reporting. Example project for automation and monitoring of REST endpoints.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "k6",
+    "typescript",
+    "load-testing",
+    "api",
+    "performance",
+    "poc",
+    "testing",
+    "automation",
+    "report",
+    "html-report"
+  ],
+  "author": "Mateo Agudelo Garcia",
+  "license": "CC-BY-4.0",
   "type": "module",
   "devDependencies": {
     "@eslint/js": "^9.26.0",
