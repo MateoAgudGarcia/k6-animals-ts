@@ -1,5 +1,5 @@
 import http from "k6/http";
-import { check, group, sleep } from "k6";
+import { check, group, sleep, JSONObject } from "k6";
 import {
   randomItem,
   randomIntBetween,
@@ -186,11 +186,9 @@ export function teardown() {
   }
 }
 
-export function handleSummary() {
+export function handleSummary(data: JSONObject) {
   return {
-    "report/index.html": htmlReport(__ENV, {
-      title: `Animals API Load Test Report - ${new Date().toLocaleDateString()}`,
-    }),
-    stdout: textSummary(__ENV, { indent: " ", enableColors: true }),
+    "report/index.html": htmlReport(data),
+    stdout: textSummary(data, { indent: " ", enableColors: true }),
   };
 }
