@@ -1,120 +1,100 @@
 [
   {
-    "id": "101",
     "name": "bee",
     "createdAt": "2025-05-11T02:00:00.000Z",
     "description": "Flying insect known for pollination and honey production."
   },
   {
-    "id": "102",
     "name": "butterfly",
     "createdAt": "2025-05-11T02:10:00.000Z",
     "description": "Insect with colorful wings and a life cycle including metamorphosis."
   },
   {
-    "id": "103",
     "name": "horse",
     "createdAt": "2025-05-11T02:20:00.000Z",
     "description": "Domesticated mammal used for riding and work."
   },
   {
-    "id": "104",
     "name": "dolphin",
     "createdAt": "2025-05-11T02:30:00.000Z",
     "description": "Intelligent aquatic mammal known for playful behavior."
   },
   {
-    "id": "105",
     "name": "hamster",
     "createdAt": "2025-05-11T02:40:00.000Z",
     "description": "Small rodent often kept as a pet."
   },
   {
-    "id": "106",
     "name": "peacock",
     "createdAt": "2025-05-11T02:50:00.000Z",
     "description": "Bird famous for its colorful and extravagant tail feathers."
   },
   {
-    "id": "107",
     "name": "rhinoceros",
     "createdAt": "2025-05-11T03:00:00.000Z",
     "description": "Large herbivorous mammal with one or two horns on its snout."
   },
   {
-    "id": "108",
     "name": "frog",
     "createdAt": "2025-05-11T03:10:00.000Z",
     "description": "Amphibian known for jumping and croaking."
   },
   {
-    "id": "109",
     "name": "kangaroo",
     "createdAt": "2025-05-11T03:20:00.000Z",
     "description": "Marsupial native to Australia, known for hopping and carrying young in a pouch."
   },
   {
-    "id": "110",
     "name": "bear",
     "createdAt": "2025-05-11T03:30:00.000Z",
     "description": "Large omnivorous mammal with thick fur and a short tail."
   },
   {
-    "id": "111",
     "name": "panda",
     "createdAt": "2025-05-11T03:40:00.000Z",
     "description": "Black and white bear native to China, known for eating bamboo."
   },
   {
-    "id": "112",
     "name": "gorilla",
     "createdAt": "2025-05-11T03:50:00.000Z",
     "description": "Largest living primate, native to forests in central Africa."
   },
   {
-    "id": "113",
     "name": "snake",
     "createdAt": "2025-05-11T04:00:00.000Z",
     "description": "Legless reptile with a long, slender body."
   },
   {
-    "id": "114",
     "name": "crocodile",
     "createdAt": "2025-05-11T04:10:00.000Z",
     "description": "Large aquatic reptile with a powerful jaw and tough skin."
   },
   {
-    "id": "115",
     "name": "cat",
     "createdAt": "2025-05-11T04:20:00.000Z",
     "description": "Small domesticated carnivorous mammal with soft fur."
   },
   {
-    "id": "116",
     "name": "fish",
     "createdAt": "2025-05-11T04:30:00.000Z",
     "description": "Aquatic animal that breathes through gills and has fins."
   },
   {
-    "id": "117",
     "name": "parrot",
     "createdAt": "2025-05-11T04:40:00.000Z",
     "description": "Colorful bird known for its ability to mimic sounds."
   },
   {
-    "id": "118",
     "name": "zebra",
     "createdAt": "2025-05-11T04:50:00.000Z",
     "description": "African wild horse with black-and-white stripes."
   },
   {
-    "id": "119",
     "name": "giraffe",
     "createdAt": "2025-05-11T05:00:00.000Z",
     "description": "Tallest living terrestrial animal, native to Africa."
   },
   {
-    "id": "120",
     "name": "flamingo",
     "createdAt": "2025-05-11T05:10:00.000Z",
     "description": "Wading bird known for its pink feathers and long legs."
