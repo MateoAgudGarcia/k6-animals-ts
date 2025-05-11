@@ -1,4 +1,4 @@
-# k6-animals-ts
+# Grafana k6 - Animals API Load Test - TypeScript [![k6 Tests and Report Deployment](https://github.com/MateoAgudGarcia/k6-animals-ts/actions/workflows/k6-deployment.yml/badge.svg)](https://github.com/MateoAgudGarcia/k6-animals-ts/actions/workflows/k6-deployment.yml)
 
 POC for load testing an animals API using k6, TypeScript, and HTML reporting. This project demonstrates how to automate and monitor REST endpoints with modern tooling.
 
