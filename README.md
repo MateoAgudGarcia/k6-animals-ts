@@ -39,7 +39,7 @@ k6 run animals.test.ts
 
 ### 4. View the HTML report
 
-After the test, open `report/load-testing.html` in your browser to see a detailed report.
+After the test, open `report/index.html` in your browser to see a detailed report.
 
 ## Project Structure
 

@@ -192,7 +192,7 @@ export function teardown() {
 
 export function handleSummary() {
   return {
-    "report/load-testing.html": htmlReport(__ENV, {
+    "report/index.html": htmlReport(__ENV, {
       title: `Animals API Load Test Report - ${new Date().toLocaleDateString()}`,
     }),
     stdout: textSummary(__ENV, { indent: " ", enableColors: true }),
