@@ -22,8 +22,8 @@ jobs:
 
       - name: Linter and Prettier
         run: |
-          npm run lint
-          npm run prettier
+          npx eslint --quiet
+          npx prettier --check .
 
       - name: Create report directory
         run: mkdir -p report
